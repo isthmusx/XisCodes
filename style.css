@@ -114,8 +114,42 @@ body {
   box-shadow: 0 0 30px rgba(0, 152, 185, .5);
 }
 
+/* Services */
+.cards-div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5rem; /* Adjust the gap between cards */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.card {
+  border-radius: 0;
+  height: 20rem;
+  box-shadow: 10px 10px 0px 0px rgba(0, 152, 185, 1);
+}
+
+#services .mainBtn {
+  margin-top: 5rem;
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0; /* Adjust as needed */
+}
+
 /* Responsive Adjustments */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .navbar .container-fluid {
     display: flex;
     justify-content: flex-end; 
@@ -150,5 +184,8 @@ body {
   .col-md-3 img {
     width: 75%; 
     padding-bottom: 20%;
-}
+  }
+  #services{
+    height: 200vh;
+  }
 }
