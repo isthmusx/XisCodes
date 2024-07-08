@@ -34,3 +34,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function auto_grow(element) {
+  element.style.height = "5px";
+  element.style.height = (element.scrollHeight) + "px";
+}
+
+const navbarLinks = document.querySelectorAll('nav ul li a');
+
+function updateNavbar() {
+  const scrollPosition = window.scrollY;
+  const viewportHeight = window.innerHeight;
+  const threshold = scrollPosition + (viewportHeight * 3) / 4;
+
+  navbarLinks.forEach(link => {
+    const sectionId = link.getAttribute('href').substring(1);
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      if (threshold >= sectionTop && threshold < sectionBottom) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    }
+  });
+}
+
+updateNavbar();
+
+window.addEventListener('scroll', updateNavbar);

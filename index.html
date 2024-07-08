@@ -161,14 +161,21 @@
 
     <!-- ABOUT -->
 
-    <div id="about" class="container-fluid d-flex flex-column align-items-center justify-content-center">
+    <div
+      id="about"
+      class="container-fluid d-flex flex-column align-items-center justify-content-center"
+    >
       <div class="row w-100">
-        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+        >
           <div class="intro text-center mb-5">
             <h3><span>About</span> Us</h3>
           </div>
         </div>
-        <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center"
+        >
           <img
             src="images/XiscodesLogoNoName.png"
             alt="XisCodes Logo"
@@ -190,16 +197,99 @@
         </div>
       </div>
     </div>
-    
 
     <!-- CONTACT -->
 
     <div
       id="contact"
       class="container-fluid d-flex flex-column align-items-center justify-content-center"
-    ></div>
-
-    <footer>WIP | XIS Codes | 2024</footer>
+    >
+      <div class="row w-100">
+        <div
+          class="col-md-6 col-12 d-none d-md-flex align-items-center justify-content-center"
+        >
+          <img
+            src="images/XiscodesLogoNoName.png"
+            alt="XisCodes Logo"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="intro text-center mb-5">
+            <h3><span>Contact</span> Us</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="0e3b3931-d968-4d27-a636-4395ec582096"
+                />
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    id="floatingInput"
+                    placeholder="John Doe"
+                    name="Name"
+                    required
+                  />
+                  <label for="floatingInput">Full Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="Email"
+                    required
+                  />
+                  <label for="floatingInput">E-Mail</label>
+                </div>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control custom-input"
+                    oninput="auto_grow(this)"
+                    placeholder="Leave a message here"
+                    id="floatingTextarea2"
+                    name="Message"
+                    style="height: 100px"
+                    required
+                  ></textarea>
+                  <label for="floatingTextarea2">Message</label>
+                </div>
+                <div class="mainBtn my-5">
+                  <button type="submit" class="btnLink">SUBMIT</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6 contact-info">
+              <div class="">
+                <h5>Contact</h5>
+                <h6>XisCodes@outlook.com</h6>
+              </div>
+              <div class="mt-5">
+                <h5>Location</h5>
+                <h6>Manila, Philippines</h6>
+              </div>
+              <div class="socials mt-5">
+                <a href="https://www.facebook.com" target="_blank">
+                  <img src="images/Facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                  <img src="images/Twitter.png" alt="Twitter" />
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <img src="images/Instagram.png" alt="Instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
