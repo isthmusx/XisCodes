@@ -58,8 +58,13 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#home, #about {
+#home {
   min-height: 90vh;
+  padding: 0 15em;
+}
+
+#about {
+  min-height: 100vh;
   padding: 0 15em;
 }
 
@@ -148,6 +153,22 @@ footer {
   padding: 10px 0; /* Adjust as needed */
 }
 
+/* About */
+.intro2 {
+  padding: 4rem;
+}
+
+.intro2 h5 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 30px;
+  text-align: justify;
+}
+
+#about .img-fluid {
+  padding: 0 10rem;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .navbar .container-fluid {
@@ -188,4 +209,16 @@ footer {
   #services{
     height: 200vh;
   }
+  .intro2 {
+    padding: 0rem;
+  }
+  .intro2 h5{
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+  #about .img-fluid {
+    padding: 0 3rem;
+    padding-bottom: 3rem;
+  }
+
 }
