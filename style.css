@@ -318,6 +318,9 @@ textarea {
   #services {
     height: 200vh;
   }
+  #contact {
+    height: 110vh;
+  }
   .intro2 {
     padding: 0rem;
   }
